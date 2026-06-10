@@ -1,9 +1,8 @@
-from django.shortcuts import render
-from hub.models import Topico
+from django.contrib import admin
+from django.urls import path
+from .views import homepage  # Importa a lógica que puxa os tópicos
 
-def homepage(request):
-    # Coleta todos os tópicos armazenados no banco de dados
-    todos_topicos = Topico.objects.all()
-    
-    # Envia os tópicos diretamente para a tela visual index.html
-    return render(request, 'index.html', {'topicos': todos_topicos})
+urlpatterns = [
+    path('admin/', admin.site.get_urls() if hasattr(admin.site, 'get_urls') else admin.site.urls),
+    path('', homepage, name='home'),  # Abre a vitrine escura diretamente na raiz do site
+]
