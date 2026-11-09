@@ -1,0 +1,119 @@
+/* Science Drop Header */
+.science-drop-header {
+    text-align: center;
+    margin: 1.5rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+}
+
+.science-drop-header .sub-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #475569;
+    margin-bottom: 2px;
+}
+
+.science-drop-header .drop-title {
+    font-size: 2.2rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #0f172a;
+}
+
+/* Article Card */
+.article-card {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.article-image-container {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.article-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.article-content {
+    padding: 1.25rem 0.25rem 0.5rem 0.25rem;
+}
+
+.article-title {
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+}
+
+.article-excerpt {
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.article-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-size: 0.85rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.article-meta .author {
+    color: #1e293b;
+    font-weight: 600;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    margin: 1.5rem 0 3rem 0;
+    font-size: 0.9rem;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #475569;
+    font-weight: 600;
+}
+
+.pagination .page-number.active {
+    color: #8b5cf6;
+}
+
+.pagination .page-nav.disabled {
+    color: #cbd5e1;
+    pointer-events: none;
+}
+
+/* Footer Adjustments */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.brand-name {
+    display: flex;
+    flex-direction: column;
+    font-weight: 800;
+    font-size: 0.9rem;
+    line-height: 1;
+}
