@@ -1,0 +1,156 @@
+/* Post Single Page Styling */
+.article-post {
+    text-align: left;
+}
+
+.post-header {
+    margin-bottom: 1.5rem;
+}
+
+.post-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1.3;
+    color: #0f172a;
+    margin-bottom: 0.75rem;
+}
+
+.post-subtitle {
+    font-size: 1rem;
+    color: #475569;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+}
+
+.post-byline {
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+.post-byline .author {
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.post-featured-image {
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.post-featured-image img {
+    width: 100%;
+    display: block;
+}
+
+/* Post Typography Body */
+.post-body p {
+    font-size: 0.95rem;
+    color: #334155;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+}
+
+.post-body h2 {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 2rem 0 1rem 0;
+    line-height: 1.3;
+}
+
+/* Comparison Box (Mito vs Realidade) */
+.comparison-box {
+    background: #0f172a;
+    color: #ffffff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.box-header-title {
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.25rem;
+    color: #f8fafc;
+}
+
+.box-item {
+    padding: 0.85rem;
+    border-radius: 10px;
+    margin-bottom: 0.75rem;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.box-item.myth {
+    background: #fff1f2;
+    color: #9f1239;
+}
+
+.box-item.reality {
+    background: #f0fdf4;
+    color: #166534;
+}
+
+.box-tag {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+}
+
+.myth-tag { color: #e11d48; }
+.reality-tag { color: #16a34a; }
+
+/* Article Bottom CTA Box */
+.cta-box {
+    margin-top: 3rem;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cta-banner {
+    position: relative;
+    background: #0f172a;
+    color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.cta-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.cta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
+}
+
+.cta-overlay h3 {
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.cta-overlay p {
+    font-size: 0.85rem;
+    color: #cbd5e1;
+    margin: 0;
+}
