@@ -1,9 +1,9 @@
 /* Core Styling & Variables */
 :root {
     --primary-color: #0d9488;
-    --primary-gradient: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
-    --whatsapp-color: #10b981;
-    --whatsapp-hover: #059669;
+    --primary-gradient: linear-gradient(135deg, #059669 0%, #2563eb 100%);
+    --whatsapp-color: #059669;
+    --whatsapp-hover: #047857;
     --text-dark: #0f172a;
     --text-muted: #64748b;
     --bg-light: #f8fafc;
@@ -57,21 +57,21 @@ body {
 }
 
 .logo-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
 }
 
 /* Header Tag */
 .tag-header {
     background: #e2e8f0;
-    color: #475569;
-    font-size: 0.75rem;
-    font-weight: 700;
+    color: #334155;
+    font-size: 0.7rem;
+    font-weight: 800;
     letter-spacing: 1px;
     padding: 0.4rem 1.25rem;
     border-radius: var(--radius-pill);
-    margin: 1.5rem 0 1rem 0;
+    margin: 1.5rem 0 1.25rem 0;
 }
 
 /* Hero Section */
@@ -81,13 +81,15 @@ body {
     flex-direction: column;
     align-items: center;
     margin-bottom: 2rem;
+    width: 100%;
 }
 
 .hero-title {
-    font-size: 2.2rem;
-    font-weight: 800;
-    line-height: 1.25;
+    font-size: 2.1rem;
+    font-weight: 900;
+    line-height: 1.2;
     margin-bottom: 1.5rem;
+    color: #0f172a;
 }
 
 .gradient-text {
@@ -98,14 +100,16 @@ body {
 
 .hero-image-card {
     width: 100%;
-    border-radius: 16px;
+    border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
     margin-bottom: 1.5rem;
+    background-color: #e2e8f0;
 }
 
 .hero-img {
     width: 100%;
+    height: auto;
     display: block;
     object-fit: cover;
 }
@@ -123,15 +127,16 @@ body {
     padding: 1rem;
     border-radius: var(--radius-pill);
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 0.9rem;
     letter-spacing: 0.5px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+    box-shadow: 0 4px 14px rgba(5, 150, 105, 0.3);
     transition: transform 0.2s, background 0.2s;
+    border: none;
 }
 
 .btn:active {
@@ -154,27 +159,26 @@ body {
     display: flex;
     gap: 0.5rem;
     width: 100%;
-    overflow-x: auto;
-    padding-bottom: 1rem;
-    margin-bottom: 1.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .pill {
     background: #ffffff;
-    border: 1px solid #e2e8f0;
-    padding: 0.6rem 1rem;
+    border: 1px solid #cbd5e1;
+    padding: 0.55rem 1rem;
     border-radius: var(--radius-pill);
     font-size: 0.75rem;
-    font-weight: 700;
+    font-weight: 800;
     color: var(--text-muted);
-    white-space: nowrap;
     display: flex;
     align-items: center;
     gap: 0.4rem;
+    cursor: pointer;
 }
 
 .pill.active {
-    border-color: var(--whatsapp-color);
+    border-color: var(--text-dark);
     color: var(--text-dark);
 }
 
@@ -184,7 +188,7 @@ body {
     width: 100%;
     border-radius: var(--radius-card);
     padding: 2rem 1.5rem;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    box-shadow: 0 4px 25px rgba(0,0,0,0.04);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -195,23 +199,24 @@ body {
     background: #dcfce7;
     color: #15803d;
     font-size: 0.7rem;
-    font-weight: 700;
-    padding: 0.3rem 1rem;
+    font-weight: 800;
+    padding: 0.35rem 1rem;
     border-radius: var(--radius-pill);
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
 }
 
 .card-title {
-    font-size: 1.8rem;
-    font-weight: 800;
+    font-size: 1.9rem;
+    font-weight: 900;
     line-height: 1.2;
     margin-bottom: 1rem;
+    color: #0f172a;
 }
 
 .card-text {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--text-muted);
-    line-height: 1.5;
+    line-height: 1.6;
     margin-bottom: 1.5rem;
 }
 
@@ -219,14 +224,14 @@ body {
     list-style: none;
     text-align: left;
     width: 100%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.75rem;
 }
 
 .features-list li {
-    font-size: 0.85rem;
-    font-weight: 600;
+    font-size: 0.88rem;
+    font-weight: 700;
     color: var(--text-dark);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.85rem;
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -240,18 +245,18 @@ body {
 .chat-container {
     background: #f1f5f9;
     width: 100%;
-    border-radius: 16px;
-    padding: 1rem;
+    border-radius: 18px;
+    padding: 1.25rem 1rem;
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.85rem;
 }
 
 .chat-bubble {
     padding: 0.75rem;
     border-radius: 12px;
-    max-width: 90%;
+    max-width: 92%;
     font-size: 0.78rem;
     text-align: left;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
@@ -271,11 +276,11 @@ body {
 }
 
 .chat-bubble .author {
-    font-weight: 700;
+    font-weight: 800;
     color: #e11d48;
     display: block;
     font-size: 0.7rem;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.25rem;
 }
 
 .chat-bubble.left:nth-child(2) .author {
@@ -284,7 +289,7 @@ body {
 
 .chat-bubble p {
     color: #334155;
-    line-height: 1.35;
+    line-height: 1.4;
 }
 
 .chat-bubble .time {
@@ -292,7 +297,7 @@ body {
     text-align: right;
     font-size: 0.65rem;
     color: #94a3b8;
-    margin-top: 0.3rem;
+    margin-top: 0.35rem;
 }
 
 .chat-bubble.right .time {
@@ -323,7 +328,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.25rem;
     border-top: 1px solid #e2e8f0;
 }
 
@@ -331,9 +336,15 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-weight: 800;
-    font-size: 1rem;
+    font-weight: 900;
+    font-size: 0.95rem;
     line-height: 1;
+}
+
+.footer-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
 }
 
 .social-links {
@@ -343,7 +354,7 @@ body {
 
 .social-links a {
     color: var(--text-dark);
-    font-size: 1.2rem;
+    font-size: 1.25rem;
 }
 
 .copyright {
