@@ -1,0 +1,11 @@
+/* Styling for Article Lists */
+.article-bullet-list, .article-ordered-list {
+    margin: 1rem 0 1.5rem 1.5rem;
+    color: #334155;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.article-bullet-list li, .article-ordered-list li {
+    margin-bottom: 0.6rem;
+}
