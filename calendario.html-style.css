@@ -1,0 +1,164 @@
+/* Events Page Styling */
+.events-page {
+    text-align: center;
+}
+
+.events-hero {
+    margin-bottom: 2rem;
+}
+
+.events-title {
+    font-size: 2.1rem;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #0f172a;
+    margin-bottom: 1rem;
+}
+
+.events-description {
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.6;
+    max-width: 440px;
+}
+
+.events-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    margin-bottom: 3rem;
+}
+
+/* Event Card */
+.event-card {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    text-align: left;
+}
+
+.event-image-container {
+    position: relative;
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+}
+
+.event-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge-status {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #ffffff;
+    color: #0f172a;
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 0.3rem 0.75rem;
+    border-radius: var(--radius-pill);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.event-content {
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.event-card-title {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #0f172a;
+    line-height: 1.25;
+}
+
+.event-location {
+    font-size: 0.85rem;
+    color: #64748b;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.event-alert {
+    font-size: 0.8rem;
+    color: #d97706;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.event-alert i {
+    font-size: 0.5rem;
+}
+
+/* Coupon Box */
+.coupon-box {
+    background: #f0fdf4;
+    border: 1px dashed #86efac;
+    border-radius: 10px;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.25rem;
+}
+
+.coupon-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #475569;
+}
+
+.coupon-code {
+    background: #059669;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+}
+
+/* Event Buttons */
+.btn-coupon {
+    background-color: #f1f5f9;
+    color: #0f172a;
+    font-weight: 800;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+}
+
+.btn-coupon:hover {
+    background-color: #e2e8f0;
+}
+
+.btn-outline {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    color: #0f172a;
+    font-weight: 800;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    box-shadow: none;
+    text-align: center;
+}
+
+.btn-outline:hover {
+    background: #f8fafc;
+}
