@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Fim da Desinformação Algorítmica - COLABSAUD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <button class="menu-btn" aria-label="Abrir Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="logo.png" alt="COLABSAUD Logo" class="logo-icon" onerror="this.src='https://via.placeholder.com/40?text=C'">
+            </a>
+        </div>
+    </header>
+
+    <main class="container article-post">
+
+        <!-- Title & Subtitle Header -->
+        <header class="post-header">
+            <h1 class="post-title">O Fim da Desinformação Algorítmica: O Manifesto Science Drop</h1>
+            <p class="post-subtitle">A digitalização das interações em saúde democratizou o acesso à informação, mas, infelizmente, agravou a desinformação impulsionada pela economia da atenção.</p>
+            <div class="post-byline">
+                <span class="author">Mazla</span> &bull; <span class="read-time">2 min ler</span>
+            </div>
+        </header>
+
+        <!-- Featured Image -->
+        <div class="post-featured-image">
+            <img src="article-image.jpg" alt="Profissionais de saúde analisando exames em monitores" onerror="this.src='https://via.placeholder.com/600x350/e2e8f0/0f172a?text=Science+Drop'">
+        </div>
+
+        <!-- Article Body Content -->
+        <article class="post-body">
+            <p>A democratização da informação médica trouxe um efeito colateral imprevisto: o ruído superou o sinal. Algoritmos de redes sociais foram otimizados para engajamento e retenção de atenção, priorizando manchetes sensacionalistas, promessas milagrosas e diagnósticos simplistas em detrimento da rigidez científica.</p>
+
+            <p>O resultado é um ecossistema digital saturado de desinformação, onde conselhos sem embasamento competem em pé de igualdade com a evidência biológica.</p>
+
+            <p>O <strong>Science Drop</strong> nasce como uma resposta direta a esse cenário.</p>
+
+            <h2>A Nova Fenomenologia da Informação de Saúde</h2>
+
+            <p>A forma como consumimos ciência mudou. Não podemos ignorar o dinamismo das plataformas digitais, mas recusamo-nos a aceitar a superficialidade como padrão. Nossa metodologia baseia-se em três pilares essenciais:</p>
+
+            <ul class="article-bullet-list">
+                <li><strong>Rigocidade Científica Inegociável:</strong> Todo conteúdo é ancorado em literatura médica revisada por pares e conceitos sólidos de fisiologia e bioquímica.</li>
+                <li><strong>Tradução Sem Perda de Densidade:</strong> Simplificar a linguagem não significa diluir a precisão técnica.</li>
+                <li><strong>Consciência Crítica:</strong> Capacitar o leitor a identificar vieses, falácias lógicas e interesses comerciais por trás do discurso de bem-estar.</li>
+            </ul>
+
+            <h2>A Relação com a Comunidade</h2>
+
+            <p>Entendemos que o aprendizado em saúde não é uma via de mão única. O <strong>Science Drop</strong> é o braço de conteúdo da comunidade <strong>COLABSAUD</strong>, um ecossistema projetado para conectar estudantes e profissionais de saúde que buscam ir além do currículo tradicional.</p>
+
+            <p>Promovemos discussões profundas sobre:</p>
+
+            <ul class="article-bullet-list">
+                <li>Aplicações de Inteligência Artificial na Saúde.</li>
+                <li>Práticas de Biohacking baseadas em evidências.</li>
+                <li>Estratégias reais de posicionamento e carreira.</li>
+            </ul>
+
+            <p>Não estamos aqui para vender fórmulas mágicas ou soluções de um clique. Nosso compromisso é com a construção de uma base de conhecimento sólida, ética e adaptada às exigências da biomedicina e da medicina moderna.</p>
+
+            <!-- Box Quadro Comparativo -->
+            <section class="comparison-box">
+                <h3 class="box-header-title">Quadro Comparativo: Redes Sociais vs. Science Drop</h3>
+                
+                <div class="box-item myth">
+                    <span class="box-tag myth-tag"><i class="fa-solid fa-xmark"></i> Redes Sociais Comuns</span>
+                    <p>Foco em retenção algorítmica, títulos apelativos e simplificação excessiva de temas complexos.</p>
+                </div>
+
+                <div class="box-item reality">
+                    <span class="box-tag reality-tag"><i class="fa-solid fa-check"></i> Science Drop</span>
+                    <p>Foco na densidade de conteúdo, rigor biomédico e utilidade prática para a carreira.</p>
+                </div>
+
+                <div class="box-item myth">
+                    <span class="box-tag myth-tag"><i class="fa-solid fa-xmark"></i> Redes Sociais Comuns</span>
+                    <p>Estimula a busca por soluções milagrosas e desintoxicações sem fundamento científico.</p>
+                </div>
+
+                <div class="box-item reality">
+                    <span class="box-tag reality-tag"><i class="fa-solid fa-check"></i> Science Drop</span>
+                    <p>Explica os mecanismos fisiológicos reais e combate a pseudociência de forma direta.</p>
+                </div>
+
+                <div class="box-item myth">
+                    <span class="box-tag myth-tag"><i class="fa-solid fa-xmark"></i> Redes Sociais Comuns</span>
+                    <p>Interações superficiais em comentários dominados por spams e bots.</p>
+                </div>
+
+                <div class="box-item reality">
+                    <span class="box-tag reality-tag"><i class="fa-solid fa-check"></i> Science Drop</span>
+                    <p>Comunidade fechada focada em networking e debate de alto nível profissional.</p>
+                </div>
+            </section>
+
+            <h2>A Necessidade de uma Liderança Digital</h2>
+
+            <p>O profissional que dominar a comunicação clara e fundamentada será o líder da nova era da saúde. O <strong>Science Drop</strong> existe para municiar você com a clareza e os dados necessários para exercer essa liderança com autoridade.</p>
+
+            <p>Se você busca se destacar, questionar o status quo e construir uma trajetória fundamentada na ciência de ponta, este espaço é seu.</p>
+
+            <p>Bem-vindo ao <strong>Science Drop</strong>. O filtro definitivo contra o ruído digital.</p>
+
+            <!-- Call to Action WhatsApp Box -->
+            <div class="cta-box">
+                <div class="cta-banner">
+                    <img src="article-image.jpg" alt="Comunidade COLABSAUD" class="cta-img" onerror="this.src='https://via.placeholder.com/600x300/0f172a/ffffff?text=Comunidade+COLABSAUD'">
+                    <div class="cta-overlay">
+                        <h3>Quer debater artigos como este?</h3>
+                        <p>Junte-se à comunidade de profissionais e estudantes no WhatsApp.</p>
+                        <a href="https://whatsapp.com" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> ENTRAR NO GRUPO</a>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="logo.png" alt="COLABSAUD Logo" class="footer-icon" onerror="this.src='https://via.placeholder.com/30?text=C'">
+            <div class="brand-name">
+                <span>colab</span>
+                <span>saud.com</span>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+
+        <p class="copyright">© 2026. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
