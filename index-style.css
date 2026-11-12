@@ -1,6 +1,6 @@
 /* Core Styling & Variables */
 :root {
-    --primary-gradient: linear-gradient(90deg, #059669 0%, #2563eb 100%);
+    --primary-gradient: linear-gradient(90deg, #059669 0%, #3b82f6 100%);
     --whatsapp-color: #059669;
     --whatsapp-hover: #047857;
     --text-dark: #0f172a;
@@ -17,7 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 body {
@@ -30,17 +30,17 @@ body {
 
 .container {
     width: 100%;
-    max-width: 480px;
-    padding: 0 1.25rem 3rem 1.25rem;
+    max-width: 390px;
+    padding: 0 1.25rem 2.5rem 1.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Navbar Header - Ícone centralizado igual ao print */
+/* Navbar Header */
 .navbar {
     width: 100%;
-    max-width: 480px;
+    max-width: 390px;
     padding: 1.25rem 1.25rem 0.5rem 1.25rem;
     display: flex;
     justify-content: space-between;
@@ -50,7 +50,7 @@ body {
 .menu-btn {
     background: none;
     border: none;
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     color: var(--text-dark);
     cursor: pointer;
     width: 40px;
@@ -62,10 +62,12 @@ body {
 }
 
 .logo-icon {
-    width: 46px;
-    height: 46px;
+    width: 48px;
+    height: 48px;
     object-fit: contain;
     display: block;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 /* Header Tag Pill */
@@ -73,12 +75,12 @@ body {
     background: #eef2ff;
     border: 1px solid #e0e7ff;
     color: #3730a3;
-    font-size: 0.68rem;
+    font-size: 0.62rem;
     font-weight: 800;
-    letter-spacing: 0.8px;
-    padding: 0.45rem 1.25rem;
+    letter-spacing: 0.9px;
+    padding: 0.45rem 1.2rem;
     border-radius: var(--radius-pill);
-    margin: 1.25rem 0 1.25rem 0;
+    margin: 1.25rem 0 1.15rem 0;
 }
 
 /* Hero Section */
@@ -87,16 +89,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.75rem;
     width: 100%;
 }
 
 .hero-title {
-    font-size: 2.25rem;
+    font-size: 2.15rem;
     font-weight: 900;
-    line-height: 1.15;
-    letter-spacing: -0.5px;
-    margin-bottom: 1.5rem;
+    line-height: 1.12;
+    letter-spacing: -0.8px;
+    margin-bottom: 1.35rem;
     color: #0f172a;
 }
 
@@ -111,7 +113,7 @@ body {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.35rem;
     background-color: #e2e8f0;
 }
 
@@ -123,30 +125,31 @@ body {
 }
 
 .hero-description {
-    font-size: 0.95rem;
+    font-size: 0.88rem;
     color: var(--text-muted);
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    padding: 0 0.5rem;
+    line-height: 1.55;
+    margin-bottom: 1.4rem;
+    padding: 0 0.25rem;
 }
 
 .hero-description strong {
     color: var(--text-dark);
+    font-weight: 700;
 }
 
 /* Buttons */
 .btn {
     width: 100%;
-    padding: 1.05rem;
+    padding: 1rem;
     border-radius: var(--radius-pill);
     text-decoration: none;
     font-weight: 800;
-    font-size: 0.88rem;
-    letter-spacing: 0.5px;
+    font-size: 0.82rem;
+    letter-spacing: 0.6px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.6rem;
+    gap: 0.55rem;
     box-shadow: 0 6px 18px rgba(5, 150, 105, 0.28);
     transition: transform 0.2s, background 0.2s;
     border: none;
@@ -166,18 +169,28 @@ body {
 }
 
 .subtext {
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     color: var(--text-muted);
-    margin-top: 0.55rem;
+    margin-top: 0.5rem;
 }
 
-/* Category Pills */
+/* Category Pills Bar - Estilo barra contínua igual ao print */
+.category-pills-wrapper {
+    width: 100%;
+    background: #ffffff;
+    border-radius: var(--radius-pill);
+    padding: 0.35rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    margin-bottom: 1.75rem;
+    overflow: hidden;
+}
+
 .category-pills {
     display: flex;
-    gap: 0.6rem;
+    align-items: center;
+    gap: 0.35rem;
     width: 100%;
     overflow-x: auto;
-    padding: 0.25rem 0 1.75rem 0;
     scrollbar-width: none;
 }
 
@@ -186,28 +199,27 @@ body {
 }
 
 .pill {
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    padding: 0.65rem 1.15rem;
+    padding: 0.55rem 0.95rem;
     border-radius: var(--radius-pill);
-    font-size: 0.72rem;
+    font-size: 0.68rem;
     font-weight: 800;
+    letter-spacing: 0.4px;
     color: var(--text-muted);
     text-decoration: none;
     white-space: nowrap;
     display: flex;
     align-items: center;
-    gap: 0.45rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    gap: 0.4rem;
 }
 
 .pill.active {
+    background: #f8fafc;
     color: var(--text-dark);
-    border-color: #cbd5e1;
 }
 
 .pill i {
     color: var(--whatsapp-color);
+    font-size: 0.75rem;
 }
 
 /* Card Box */
@@ -215,7 +227,7 @@ body {
     background: var(--card-bg);
     width: 100%;
     border-radius: var(--radius-card);
-    padding: 2.25rem 1.5rem 1.5rem 1.5rem;
+    padding: 2rem 1.35rem 1.35rem 1.35rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
     display: flex;
     flex-direction: column;
@@ -226,50 +238,51 @@ body {
 .card-badge {
     background: #dcfce7;
     color: #15803d;
-    font-size: 0.68rem;
+    font-size: 0.62rem;
     font-weight: 800;
-    letter-spacing: 0.8px;
-    padding: 0.4rem 1.15rem;
+    letter-spacing: 0.9px;
+    padding: 0.4rem 1.1rem;
     border-radius: var(--radius-pill);
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.15rem;
 }
 
 .card-title {
-    font-size: 2rem;
+    font-size: 1.95rem;
     font-weight: 900;
-    line-height: 1.15;
-    margin-bottom: 1rem;
+    line-height: 1.12;
+    letter-spacing: -0.6px;
+    margin-bottom: 0.95rem;
     color: #0f172a;
 }
 
 .card-text {
-    font-size: 0.92rem;
+    font-size: 0.86rem;
     color: var(--text-muted);
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+    line-height: 1.55;
+    margin-bottom: 1.4rem;
 }
 
 .features-list {
     list-style: none;
     text-align: left;
     width: 100%;
-    margin-bottom: 1.75rem;
-    padding: 0 0.5rem;
+    margin-bottom: 1.6rem;
+    padding: 0 0.35rem;
 }
 
 .features-list li {
-    font-size: 0.88rem;
+    font-size: 0.82rem;
     font-weight: 700;
     color: var(--text-dark);
-    margin-bottom: 0.85rem;
+    margin-bottom: 0.8rem;
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.7rem;
 }
 
 .features-list li i {
     color: var(--whatsapp-color);
-    width: 18px;
+    width: 16px;
     text-align: center;
 }
 
@@ -279,19 +292,19 @@ body {
     border: 1px solid #f1f5f9;
     width: 100%;
     border-radius: 22px;
-    padding: 1.25rem 1rem;
-    margin-top: 2rem;
+    padding: 1.15rem 0.9rem;
+    margin-top: 1.75rem;
     display: flex;
     flex-direction: column;
-    gap: 0.85rem;
-    box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.02);
+    gap: 0.8rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
 }
 
 .chat-bubble {
-    padding: 0.8rem 0.9rem;
+    padding: 0.75rem 0.85rem;
     border-radius: 14px;
     max-width: 88%;
-    font-size: 0.8rem;
+    font-size: 0.76rem;
     text-align: left;
     position: relative;
 }
@@ -312,8 +325,8 @@ body {
     font-weight: 800;
     color: #e11d48;
     display: block;
-    font-size: 0.72rem;
-    margin-bottom: 0.25rem;
+    font-size: 0.68rem;
+    margin-bottom: 0.2rem;
 }
 
 .chat-bubble.left:nth-child(2) .author {
@@ -322,15 +335,15 @@ body {
 
 .chat-bubble p {
     color: #1e293b;
-    line-height: 1.4;
+    line-height: 1.38;
 }
 
 .chat-bubble .time {
     display: block;
     text-align: right;
-    font-size: 0.65rem;
+    font-size: 0.62rem;
     color: #94a3b8;
-    margin-top: 0.35rem;
+    margin-top: 0.3rem;
 }
 
 .chat-bubble.right .time {
@@ -340,15 +353,15 @@ body {
 .chat-typing {
     background: var(--chat-left);
     align-self: flex-start;
-    padding: 0.6rem 0.9rem;
+    padding: 0.55rem 0.85rem;
     border-radius: var(--radius-pill);
     display: flex;
     gap: 4px;
 }
 
 .chat-typing span {
-    width: 6px;
-    height: 6px;
+    width: 5px;
+    height: 5px;
     background: #94a3b8;
     border-radius: 50%;
 }
@@ -356,16 +369,16 @@ body {
 /* Footer */
 .footer {
     width: 100%;
-    max-width: 480px;
-    padding: 1.5rem 1.25rem 3rem 1.25rem;
+    max-width: 390px;
+    padding: 1rem 1.25rem 2.5rem 1.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.25rem;
+    gap: 1.15rem;
 }
 
 .footer-full-logo {
-    width: 155px;
+    width: 145px;
     height: auto;
     object-fit: contain;
     display: block;
@@ -373,12 +386,12 @@ body {
 
 .social-links {
     display: flex;
-    gap: 1.75rem;
+    gap: 1.65rem;
 }
 
 .social-links a {
     color: var(--text-dark);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     transition: opacity 0.2s;
 }
 
@@ -387,6 +400,6 @@ body {
 }
 
 .copyright {
-    font-size: 0.72rem;
+    font-size: 0.68rem;
     color: var(--text-muted);
 }
