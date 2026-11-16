@@ -76,11 +76,17 @@
       width: 36px;
       height: 36px;
       border-radius: 50%;
-      background-color: #000000;
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
+    }
+
+    .header-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
     }
 
     /* HERO SECTION */
@@ -140,6 +146,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center;
       display: block;
     }
 
@@ -420,15 +427,11 @@
       </button>
 
       <a href="#" class="header-icon" aria-label="ColabSaud Início">
-        <!-- Ícone circular fiel ao topo do print -->
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M6 18h8"/>
-          <path d="M3 22h18"/>
-          <path d="M14 22a7 7 0 1 0 0-14h-1"/>
-          <path d="M9 14h2"/>
-          <path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"/>
-          <path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"/>
-        </svg>
+        <img
+          src="https://i.imgur.com/eZeOT2a.png"
+          alt="ColabSaud"
+          referrerpolicy="no-referrer"
+        />
       </a>
     </header>
 
@@ -441,8 +444,11 @@
       </h1>
 
       <div class="hero-image-card">
-        <!-- Substitua pelo caminho exato da sua foto do palco -->
-        <img src="foto-palco.jpg" alt="Samuel no palco em evento de saúde">
+        <img
+          src="https://i.imgur.com/dPKT9qg.jpeg"
+          alt="Samuel no palco em evento de saúde"
+          referrerpolicy="no-referrer"
+        >
       </div>
 
       <p class="hero-subtitle">
@@ -471,7 +477,6 @@
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
           MATERIAIS E PROTOCOLOS
         </span>
-        <!-- Duplicado para rolagem contínua -->
         <span class="ticker-item">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           NETWORKING COLABORATIVO
@@ -556,6 +561,7 @@
         src="https://i.imgur.com/I5mylNo.png"
         alt="ColabSaud.com"
         class="footer-logo"
+        referrerpolicy="no-referrer"
       />
 
       <div class="social-links">
